@@ -1,0 +1,52 @@
+/* ScrollToTop Component Styles (from jQuery main.js) */
+.scroll-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 50px;
+  height: 50px;
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 99;
+  font-size: 1.2rem;
+}
+
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top:hover {
+  background: #0056b3;
+  transform: translateY(-5px);
+}
+
+.scroll-top svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.scroll-top path {
+  fill: none;
+  stroke: #007bff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 307.919, 307.919;
+  stroke-dashoffset: 307.919;
+  transition: stroke-dashoffset 10ms linear;
+}
+
+.scroll-top:hover path {
+  stroke: #0056b3;
+}

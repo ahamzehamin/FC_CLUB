@@ -1,0 +1,474 @@
+/* Header styles - converted from original template */
+.header-top {
+  background: #f8f9fa;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.header-links ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-links a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-links a:hover {
+  color: #007bff;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-links a {
+  color: #666;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+/* Sticky Header */
+.nav-header {
+  position: relative;
+  z-index: 1000;
+}
+
+.sticky-wrapper {
+  position: relative;
+}
+
+.menu-area {
+  background: white;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+.header-logo img {
+  max-height: 60px;
+}
+
+/* Main Menu */
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.main-menu ul li {
+  position: relative;
+  margin: 0 0.5rem;
+}
+
+.main-menu ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 1.5rem 1rem;
+  display: block;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main-menu ul li:hover > a,
+.main-menu ul li.active > a {
+  color: #007bff;
+}
+
+.menu-item-has-children .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 200px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.menu-item-has-children:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.sub-menu li {
+  margin: 0;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.sub-menu li:last-child {
+  border-bottom: none;
+}
+
+.sub-menu li a {
+  padding: 0.75rem 1.5rem;
+  color: #666;
+  font-weight: normal;
+}
+
+.sub-menu li:hover a {
+  color: #007bff;
+  background: #f8f9fa;
+}
+
+/* Navbar Right */
+.navbar-right-desc {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.navbar-right-desc a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar-right-desc a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle.icon-btn:hover {
+  color: #007bff;
+}
+
+/* Mobile Menu */
+.mobile-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
+  transition: left 0.3s ease;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.mobile-menu-wrapper.active {
+  left: 0;
+}
+
+.mobile-menu-area {
+  padding: 2rem;
+  position: relative;
+}
+
+.mobile-menu-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-logo img {
+  max-height: 50px;
+}
+
+.mobile-menu ul {
+  margin: 2rem 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 1rem;
+}
+
+.mobile-menu ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu ul li:hover > a {
+  color: #007bff;
+}
+
+.mobile-menu .sub-menu {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.mobile-menu .sub-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.mobile-menu .sub-menu li a {
+  font-weight: normal;
+  padding: 0.25rem 0;
+}
+
+/* Side Menu Toggle Button */
+.sideMenuToggler.btn-border {
+  border: 1px solid #007bff !important;
+  background: transparent !important;
+  color: #007bff !important;
+  padding: 8px 15px !important;
+  cursor: pointer !important;
+}
+
+.sideMenuToggler.btn-border:hover {
+  background: #007bff !important;
+  color: white !important;
+}
+
+/* Side Menu - Exact Replica of Original Template */
+.sidemenu-wrapper {
+  position: fixed !important;
+  z-index: 99999 !important;
+  right: 0 !important;
+  top: 0 !important;
+  height: 100% !important;
+  width: 0 !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: all ease 0.8s !important;
+}
+
+.sidemenu-wrapper.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 100% !important;
+}
+
+.sidemenu-wrapper.show .sidemenu-content {
+  right: 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.sidemenu-content {
+  background-color: var(--title-color) !important;
+  width: 450px !important;
+  margin-left: auto !important;
+  padding: 80px 30px !important;
+  height: 100% !important;
+  overflow-y: scroll !important;
+  position: relative !important;
+  right: -500px !important;
+  cursor: auto !important;
+  transition-delay: 1s !important;
+  transition: right ease 1s !important;
+}
+
+.closeButton {
+  display: inline-block;
+  border: 2px solid;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  transform: rotate(0);
+  transition: all ease 0.4s;
+}
+
+.closeButton:hover {
+  color: var(--theme-color);
+  border-color: var(--theme-color);
+  transform: rotate(90deg);
+}
+
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.social-btn.style2 {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-btn.style2 a {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.social-btn.style2 a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.widget_title {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.menu li {
+  margin-bottom: 0.5rem;
+}
+
+.menu li a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: white;
+}
+
+/* Search Popup */
+.popup-search-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.popup-search-box.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  max-width: 500px;
+  width: 90%;
+}
+
+.search-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.search-form button {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-form button:hover {
+  background: #0056b3;
+}
+
+/* Sticky Header Effects */
+.sticky-active .menu-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .header-links ul {
+    gap: 1rem;
+  }
+
+  .main-menu ul li {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    display: none !important;
+  }
+
+  .sidemenu-wrapper {
+    width: 100%;
+    right: -100%;
+  }
+
+  .mobile-menu-wrapper {
+    width: 100%;
+    left: -100%;
+  }
+
+  .menu-toggle.icon-btn {
+    display: block;
+  }
+}
