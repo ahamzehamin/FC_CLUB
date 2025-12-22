@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAdminTheme } from '../../context/AdminThemeProvider';
 import './Header.css';
 
 const Header = ({ user, onMenuClick, onLogout }) => {
+  const { theme, toggleTheme } = useAdminTheme();
   const [showProfileMenu, setShowProfileMenu] = useState(false);
 
   const toggleProfileMenu = () => {
@@ -53,6 +55,18 @@ const Header = ({ user, onMenuClick, onLogout }) => {
             <button className="notification-btn">
               <i className="fas fa-bell"></i>
               <span className="notification-badge">3</span>
+            </button>
+          </div>
+
+          {/* Theme Toggle */}
+          <div className="header-theme">
+            <button
+              className="theme-toggle-btn"
+              onClick={toggleTheme}
+              title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+            >
+              <span className="light">Light</span>
+              <span className="dark">Dark</span>
             </button>
           </div>
 

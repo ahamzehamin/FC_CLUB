@@ -85,5 +85,4 @@
   }
 }
 
-/* Import dashboard styles */
-@import url('/admin-assets/css/style.css');
+/* Additional admin layout styles can be added here */

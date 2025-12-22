@@ -1,0 +1,8 @@
+/*!
+* metismenujs - v1.4.0
+* MetisMenu: Collapsible menu plugin with Vanilla-JS
+* https://github.com/onokumus/metismenujs#readme
+*
+* Made by Osman Nuri Okumus <onokumus@gmail.com> (https://github.com/onokumus)
+* Under MIT License
+*/
