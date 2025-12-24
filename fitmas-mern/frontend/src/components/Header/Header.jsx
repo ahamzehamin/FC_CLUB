@@ -11,7 +11,7 @@ const Header = () => {
 
   // Determine header layout based on current route
   const isHeaderLayout3 = location.pathname === '/home-3' || location.pathname.includes('/home-3');
-
+  
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {

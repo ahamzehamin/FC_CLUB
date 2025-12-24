@@ -2219,7 +2219,7 @@ Authorization: Bearer <admin_token>
 
 1. **Clone و Navigate:**
 ```bash
-git clone https://github.com/yourusername/fitmas-mern.git
+git clone https://github.com/ahamzehamin/fitmas-mern.git
 cd fitmas-mern
 ```
 
